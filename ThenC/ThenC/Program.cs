@@ -1,18 +1,7 @@
-// Início conexão com o banco de dados   
-using Microsoft.Extensions.Configuration;
-using System;
-using System.Diagnostics.Metrics;
-using ThenC.Data;
-using Microsoft.EntityFrameworkCore;
-
 var builder = WebApplication.CreateBuilder(args);
-
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-
-string stringDeConexao = builder.Configuration.GetConnectionString("conexaoMySQL");
-builder.Services.AddDbContext<BaseContext>(x => x.UseSqlServer(stringDeConexao));
 
 var app = builder.Build();
 
@@ -23,6 +12,7 @@ if (!app.Environment.IsDevelopment())
 	// The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
 	app.UseHsts();
 }
+//teste
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
