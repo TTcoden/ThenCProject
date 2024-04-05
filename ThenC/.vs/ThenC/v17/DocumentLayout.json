@@ -3,6 +3,17 @@
   "WorkspaceRootPath": "C:\\Users\\Tiago Trindade\\Documents\\GitHub\\ThenCProject\\ThenC\\",
   "Documents": [
     {
+<<<<<<< HEAD
+=======
+      "AbsoluteMoniker": "D:0:0:{DFC5CB30-086F-4DF3-9612-F45E1CEC9D89}|ThenC\\ThenC.csproj|c:\\users\\tiago trindade\\documents\\github\\thencproject\\thenc\\thenc\\repository\\person\\ipersonrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DFC5CB30-086F-4DF3-9612-F45E1CEC9D89}|ThenC\\ThenC.csproj|solutionrelative:thenc\\repository\\person\\ipersonrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DFC5CB30-086F-4DF3-9612-F45E1CEC9D89}|ThenC\\ThenC.csproj|c:\\users\\tiago trindade\\documents\\github\\thencproject\\thenc\\thenc\\repository\\person\\personrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DFC5CB30-086F-4DF3-9612-F45E1CEC9D89}|ThenC\\ThenC.csproj|solutionrelative:thenc\\repository\\person\\personrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+>>>>>>> 78d007afdb48c3b759e8029b2aea8925827eb3c4
       "AbsoluteMoniker": "D:0:0:{DFC5CB30-086F-4DF3-9612-F45E1CEC9D89}|ThenC\\ThenC.csproj|c:\\users\\tiago trindade\\documents\\github\\thencproject\\thenc\\thenc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DFC5CB30-086F-4DF3-9612-F45E1CEC9D89}|ThenC\\ThenC.csproj|solutionrelative:thenc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -18,8 +29,48 @@
       "DocumentGroups": [
         {
           "DockedWidth": 116,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IPersonRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Tiago Trindade\\Documents\\GitHub\\ThenCProject\\ThenC\\ThenC\\Repository\\Person\\IPersonRepository.cs",
+              "RelativeDocumentMoniker": "ThenC\\Repository\\Person\\IPersonRepository.cs",
+              "ToolTip": "C:\\Users\\Tiago Trindade\\Documents\\GitHub\\ThenCProject\\ThenC\\ThenC\\Repository\\Person\\IPersonRepository.cs",
+              "RelativeToolTip": "ThenC\\Repository\\Person\\IPersonRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-05T17:12:16.174Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PersonRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Tiago Trindade\\Documents\\GitHub\\ThenCProject\\ThenC\\ThenC\\Repository\\Person\\PersonRepository.cs",
+              "RelativeDocumentMoniker": "ThenC\\Repository\\Person\\PersonRepository.cs",
+              "ToolTip": "C:\\Users\\Tiago Trindade\\Documents\\GitHub\\ThenCProject\\ThenC\\ThenC\\Repository\\Person\\PersonRepository.cs",
+              "RelativeToolTip": "ThenC\\Repository\\Person\\PersonRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-05T17:12:03.116Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Tiago Trindade\\Documents\\GitHub\\ThenCProject\\ThenC\\ThenC\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "ThenC\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Tiago Trindade\\Documents\\GitHub\\ThenCProject\\ThenC\\ThenC\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "ThenC\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAsAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-05T17:05:32.943Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
@@ -33,7 +84,12 @@
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 0,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\Tiago Trindade\\Documents\\GitHub\\ThenCProject\\ThenC\\ThenC\\Controllers\\HomeController.cs",
@@ -41,9 +97,19 @@
               "ToolTip": "C:\\Users\\Tiago Trindade\\Documents\\GitHub\\ThenCProject\\ThenC\\ThenC\\Controllers\\HomeController.cs",
               "RelativeToolTip": "ThenC\\Controllers\\HomeController.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAAsAAAADAAAA",
+=======
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Tiago Trindade\\Documents\\GitHub\\ThenCProject\\ThenC\\ThenC\\Program.cs",
+              "RelativeDocumentMoniker": "ThenC\\Program.cs",
+              "ToolTip": "C:\\Users\\Tiago Trindade\\Documents\\GitHub\\ThenCProject\\ThenC\\ThenC\\Program.cs",
+              "RelativeToolTip": "ThenC\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+>>>>>>> 78d007afdb48c3b759e8029b2aea8925827eb3c4
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-05T17:05:32.943Z",
               "EditorCaption": ""
+<<<<<<< HEAD
             },
             {
               "$type": "Bookmark",
@@ -60,6 +126,8 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-05T16:55:04.318Z"
+=======
+>>>>>>> 78d007afdb48c3b759e8029b2aea8925827eb3c4
             }
           ]
         }
