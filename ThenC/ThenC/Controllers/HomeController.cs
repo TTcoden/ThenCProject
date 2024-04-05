@@ -1,21 +1,27 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 using System.Diagnostics;
 using ThenC.Models;
+using ThenC.Repository.Person;
 
 namespace ThenC.Controllers
 {
 	public class HomeController : Controller
 	{
 		private readonly ILogger<HomeController> _logger;
+		private readonly IPersonRepository _personRepository;
 
-		public HomeController(ILogger<HomeController> logger)
+
+		public HomeController(ILogger<HomeController> logger, IPersonRepository personRepository)
 		{
 			_logger = logger;
+			_personRepository = personRepository;
 		}
 
 		public IActionResult Index()
 		{
-			return View();
+			List<PersonModel> Person = _personRepository.GetList();
+			return View(Person);
 		}
 
 		public IActionResult Privacy()

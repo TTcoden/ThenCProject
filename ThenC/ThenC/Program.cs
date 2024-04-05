@@ -1,7 +1,16 @@
+using Microsoft.EntityFrameworkCore;
+using ThenC.Repository.Person;
+using ThenC.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+string connectionString = builder.Configuration.GetConnectionString("conexaoMySQL");
+builder.Services.AddDbContext<BaseContext>(x => x.UseSqlServer(connectionString));
+
+//Injetando dependencia da Interface resolvendo ela com uma classe
+builder.Services.AddScoped<IPersonRepository, PersonRepository>();
 
 var app = builder.Build();
 
