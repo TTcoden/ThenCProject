@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ThenC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+820ef5d3d651144baa1b799cca21e14081d49bf5")]
 [assembly: System.Reflection.AssemblyProductAttribute("ThenC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ThenC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
