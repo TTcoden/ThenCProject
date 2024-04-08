@@ -6,5 +6,7 @@ namespace ThenC.Repository.Person
     {
 
         List <PersonModel> GetList();
+
+        
     }
 }
