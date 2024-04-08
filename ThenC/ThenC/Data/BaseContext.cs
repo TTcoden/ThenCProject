@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using ThenC.Controllers;
 using ThenC.Models;
 
@@ -12,7 +13,6 @@ namespace ThenC.Data
         {
 
         }
-
         public DbSet<PersonModel> Person { get; set; }
     }
 }
