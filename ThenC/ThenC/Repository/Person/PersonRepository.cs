@@ -4,7 +4,7 @@ using ThenC.Models;
 namespace ThenC.Repository.Person
 {
 	public class PersonRepository : IPersonRepository
-	{
+    {
 
 		private BaseContext _basecontext;
 		public PersonRepository(BaseContext basecontext)

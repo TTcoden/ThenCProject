@@ -1,8 +1,8 @@
 ﻿@using ThenC.Controllers;
-@model List<PersonModel>
+@model List<TablesModel>
 
 @{
-    ViewData["Title"] = "Person";
+    ViewData["Title"] = "Tables";
 
 }
 
@@ -101,8 +101,8 @@
                 <tr>
                     <th scope="col">#</th>
                     <th scope="col">Nome</th>
-                    <th scope="col">Address</th>
-                    <th scope="col">Doc.</th>
+                    <th scope="col">Colunas</th>
+                    <th scope="col"> </th>
                     <th scope="col"></th>
 
                 </tr>
@@ -116,16 +116,17 @@
                         foreach (var item in Model)
                         {
 
+                            var JsonColunas = item.Colunms;
 
                             <tr>
                                 <th scope="row">@item.Id</th>
                                 <td>@item.Name</td>
-                                <td>@item.Address</td>
-                                <td>@item.Doc</td>
+
+                                <td>@JsonColunas</td>
                                 
                                 <td scope="col">
-                                    <a role="button" class="btn btn-primary" asp-route-id="@item.Id" asp-controller="Person" asp-action="GetForUpdate">Editar</a>
-                                    <a role="button" class="btn btn-danger" asp-route-id="@item.Id" asp-controller="Person" asp-action="ConfirmDelete">Apagar</a>
+                                    <a role="button" class="btn btn-primary" asp-route-id="@item.Id" asp-controller="Tables" asp-action="GetForUpdate">Editar</a>
+                                    <a role="button" class="btn btn-danger" asp-route-id="@item.Id" asp-controller="Tables" asp-action="ConfirmDelete">Apagar</a>
                                 </td>
                             </tr>
 

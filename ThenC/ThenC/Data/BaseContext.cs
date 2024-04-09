@@ -14,5 +14,6 @@ namespace ThenC.Data
 
         }
         public DbSet<PersonModel> Person { get; set; }
+        public DbSet<TablesModel> Tables { get; set; }
     }
 }

@@ -1,0 +1,55 @@
+﻿@using ThenC.Controllers;
+@using System.Globalization;
+@using System.Collections;
+@model PersonModel;
+
+@{
+    ViewData["Title"] = "Person Create";
+
+}
+<style>
+    .form-group {
+        padding: 10px;
+    }
+
+    .field-validation-error {
+        color: #e01d1d;
+    }
+</style>
+
+
+<form asp-controller="Person" asp-action="Create" method="post">
+    <br />
+    <button type="submit" class="btn btn-primary">Salvar</button>
+    <a type="button" class="btn btn-danger " asp-controller="Event" asp-action="Index">Cancelar</a>
+    <br />
+    <br />
+    <h3>@ViewData["Title"]</h3>
+
+    <div class="form-group w-60">
+        <label for="exampleInputName">Nome da Pessoa</label>
+        <input asp-for="Name" type="text" class="form-control" id="exampleInputName" aria-describedby="" placeholder="Nome da Pessoa">
+        @Html.ValidationMessageFor(x => x.Name)
+
+    </div>
+
+    <div class="form-group w-60">
+        <label for="exampleInputDescripition">Endereço</label>
+        <input asp-for="Address" type="text" class="form-control" id="exampleInputName" aria-describedby="" placeholder="Nome da Pessoa">
+        @Html.ValidationMessageFor(x => x.Address)
+    </div>
+
+    <div class="form-group w-60">
+        <label for="text">Documento</label>
+        <input asp-for="Doc" type="text" class="form-control" id="exampleInputDoc" aria-describedby="" placeholder="Documento">
+        @Html.ValidationMessageFor(x => x.Doc)
+
+    </div>
+
+
+    </div>
+
+
+</form>
+
+
