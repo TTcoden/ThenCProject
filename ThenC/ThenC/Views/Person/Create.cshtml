@@ -1,79 +1,53 @@
-﻿@using Soulfix.Controllers;
+﻿@using ThenC.Controllers;
 @using System.Globalization;
-@using Soulfix.Metods;
 @using System.Collections;
-@model EventModel;
+@model PersonModel;
 
 @{
-	ViewData["Title"] = "Novo Evento";
+    ViewData["Title"] = "Person Create";
 
 }
 <style>
-	.form-group {
-		padding: 10px;
-	}
+    .form-group {
+        padding: 10px;
+    }
 
-	.field-validation-error {
-		color: #e01d1d;
-	}
+    .field-validation-error {
+        color: #e01d1d;
+    }
 </style>
-<h1>@ViewData["Title"]</h1>
-
-<form asp-controller="Event" asp-action="Create" method="post">
-	<br />
-	<button type="submit" class="btn btn-primary">Salvar</button>
-	<a type="button" class="btn btn-danger " asp-controller="Event" asp-action="Index">Cancelar</a>
-	<br />
-	<br />
-
-	<div class="form-group w-100">
-		<label for="exampleInputName">Nome do Evento</label>
-		<input asp-for="Name" type="text" class="form-control" id="exampleInputName" aria-describedby="" placeholder="Nome do Evento">
-		@Html.ValidationMessageFor(x => x.Name)
-
-	</div>
 
 
-	<div class="form-row " style="display:flex">
-		<div class="form-group col-md-6">
-			<label for="exampleInputDescripition">Descrição</label>
-			<textarea type="text-area" asp-for="Description" class="form-control" id="exampleInputDescripition" aria-describedby="" placeholder="Descrição"></textarea>
-			@Html.ValidationMessageFor(x => x.Description)
-		</div>
+<form asp-controller="Person" asp-action="Create" method="post">
+    <br />
+    <button type="submit" class="btn btn-primary">Salvar</button>
+    <a type="button" class="btn btn-danger " asp-controller="Event" asp-action="Index">Cancelar</a>
+    <br />
+    <br />
+    <h3>@ViewData["Title"]</h3>
 
-		<div class="form-group col-md-6">
-			<label for="exampleInputEmail">Data</label>
-			<input asp-for="Date" type="datetime-local" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Data do evento">
-			@Html.ValidationMessageFor(x => x.Date)
+    <div class="form-group w-60">
+        <label for="exampleInputName">Nome da Pessoa</label>
+        <input asp-for="Name" type="text" class="form-control" id="exampleInputName" aria-describedby="" placeholder="Nome da Pessoa">
+        @Html.ValidationMessageFor(x => x.Name)
 
-		</div>
+    </div>
 
-	</div>
+    <div class="form-group w-60">
+        <label for="exampleInputDescripition">Endereço</label>
+        <input asp-for="Address" type="text" class="form-control" id="exampleInputName" aria-describedby="" placeholder="Nome da Pessoa">
+        @Html.ValidationMessageFor(x => x.Address)
+    </div>
 
+    <div class="form-group w-60">
+        <label for="text">Documento</label>
+        <input asp-for="Doc" type="text" class="form-control" id="exampleInputDoc" aria-describedby="" placeholder="Documento">
+        @Html.ValidationMessageFor(x => x.Doc)
 
-	<div class="form-row " style="display:flex">
-		<div class="form-group col-6">
-			<label for="exampleInputCategory">Categorias</label>
-			@{
-				var teste = TempData["listCategoryName"];
-			}
-			<select asp-for="CategoryId" type="text" class="form-control" id="exampleInputCategory" aria-describedby="" placeholder="Categorias" asp-items='new SelectList((IEnumerable)teste, "Id", "Name")'>
-				<option value="10000" selected>
-					Selecione uma opção...
-				</option>
-
-
-				@Html.ValidationMessageFor(x => x.Category)
-			</select>
+    </div>
 
 
-		</div>
-
-
-
-
-
-	</div>
+    </div>
 
 
 </form>
