@@ -1,8 +1,8 @@
 ﻿@using ThenC.Controllers;
-@model List<PersonModel>
+@model List<TablesModel>
 
 @{
-    ViewData["Title"] = "Person";
+    ViewData["Title"] = "Forms";
 
 }
 
@@ -97,16 +97,6 @@
 
 
         <table class="table table-hover">
-            <thead>
-                <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Nome</th>
-                    <th scope="col">Address</th>
-                    <th scope="col">Doc.</th>
-                    <th scope="col"></th>
-
-                </tr>
-            </thead>
             <tbody>
 
                 @{
@@ -120,12 +110,13 @@
                             <tr>
                                 <th scope="row">@item.Id</th>
                                 <td>@item.Name</td>
-                                <td>@item.Address</td>
-                                <td>@item.Doc</td>
+
+                                <td>@item.Colunms</td>
+                                <td>@item.ColunmsInfo</td>
                                 
                                 <td scope="col">
-                                    <a role="button" class="btn btn-primary" asp-route-id="@item.Id" asp-controller="Person" asp-action="GetForUpdate">Editar</a>
-                                    <a role="button" class="btn btn-danger" asp-route-id="@item.Id" asp-controller="Person" asp-action="ConfirmDelete">Apagar</a>
+                                    <a role="button" class="btn btn-primary" asp-route-id="@item.Id" asp-controller="Forms" asp-action="GetForUpdate">Editar</a>
+                                    <a role="button" class="btn btn-danger" asp-route-id="@item.Id" asp-controller="Forms" asp-action="ConfirmDelete">Apagar</a>
                                 </td>
                             </tr>
 

@@ -15,7 +15,8 @@ builder.Services.AddControllersWithViews();
 var connectionString = builder.Configuration.GetConnectionString("conexaoMySQL");
 builder.Services.AddDbContext<BaseContext>(x => x.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
 //Injetando dependencia da Interface resolvendo ela com uma classe
-builder.Services.AddScoped<IPersonRepository, PersonRepository>();
+builder.Services.AddScoped<ITablesRepository, TablesRepository>();
+
 
 var app = builder.Build();
 
@@ -37,6 +38,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
 	name: "default",
-	pattern: "{controller=Person}/{action=Index}/{id?}");
+	pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();

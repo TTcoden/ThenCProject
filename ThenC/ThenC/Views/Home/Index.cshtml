@@ -1,10 +1,9 @@
 ﻿@using ThenC.Controllers;
 @using System.Globalization;
 @using System.Collections;
-@model PersonModel;
 
 @{
-	ViewData["Title"] = "Novo Evento";
+	ViewData["Title"] = "Seleciona uma das opções";
 
 }
 <style>
@@ -16,42 +15,3 @@
 		color: #e01d1d;
 	}
 </style>
-<h1>@ViewData["Title"]</h1>
-
-<form asp-controller="Event" asp-action="Create" method="post">
-	<br />
-	<button type="submit" class="btn btn-primary">Salvar</button>
-	<a type="button" class="btn btn-danger " asp-controller="Event" asp-action="Index">Cancelar</a>
-	<br />
-	<br />
-
-	<div class="form-group w-100">
-		<label for="exampleInputName">Nome do Evento</label>
-		<input asp-for="Name" type="text" class="form-control" id="exampleInputName" aria-describedby="" placeholder="Nome do Evento">
-		@Html.ValidationMessageFor(x => x.Name)
-
-	</div>
-
-
-	<div class="form-row " style="display:flex">
-		<div class="form-group col-md-6">
-			<label for="exampleInputDescripition">Descrição</label>
-			<textarea type="text-area" asp-for="Address" class="form-control" id="exampleInputDescripition" aria-describedby="" placeholder="Descrição"></textarea>
-			@Html.ValidationMessageFor(x => x.Address)
-		</div>
-
-		<div class="form-group col-md-6">
-			<label for="exampleInputEmail">Data</label>
-			<input asp-for="Doc" type="datetime-local" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Data do evento">
-			@Html.ValidationMessageFor(x => x.Doc)
-
-		</div>
-
-	</div>
-
-	</div>
-
-
-</form>
-
-

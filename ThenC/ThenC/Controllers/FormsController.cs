@@ -6,22 +6,22 @@ using ThenC.Repository.Person;
 
 namespace ThenC.Controllers
 {
-	public class HomeController : Controller
+	public class FormsController : Controller
 	{
-		private readonly ILogger<HomeController> _logger;
-		private readonly ITablesRepository _personRepository;
+		private readonly ILogger<TablesController> _logger;
+		private readonly ITablesRepository _formsRepository;
 
 
-		public HomeController(ILogger<HomeController> logger, ITablesRepository personRepository)
+		public FormsController(ILogger<TablesController> logger, ITablesRepository formsRepository)
 		{
 			_logger = logger;
-			_personRepository = personRepository;
+            _formsRepository = formsRepository;
 		}
 
 		public IActionResult Index()
 		{
-			
-			return View();
+			List<TablesModel> Forms = _formsRepository.GetList();
+			return View(Forms);
 		}
 
 		public IActionResult Privacy()
@@ -34,5 +34,10 @@ namespace ThenC.Controllers
 		{
 			return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
 		}
-	}
+
+        public IActionResult Create()
+        {
+			return View();
+        }
+    }
 }
