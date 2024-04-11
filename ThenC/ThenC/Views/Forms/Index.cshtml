@@ -3,7 +3,6 @@
 
 @{
     ViewData["Title"] = "Forms";
-
 }
 
 <style>
@@ -12,25 +11,18 @@
         right: 1%;
         top: 30%;
     }
-
-    }
 </style>
 
 <br />
 <br />
 
-
-
-
-
-
-
-
 <h3>@ViewData["Title"]</h3>
-<form class="d-flex" role="search">
-    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-    <button class="btn btn-outline-success" type="submit">Search</button>
-</form>
+
+    <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+
 <br />
 <br />
 <div class="container col-sm-6 d-flex ">
@@ -38,9 +30,10 @@
     <div class="card  " style="width: 18rem;margin-right: 20px">
         <img src="..." class="card-img-top" alt="...">
         <div class="card-body">
-            <h5 class="card-title">Criar um Registro</h5>
+            <h5 class="card-title">Person</h5>
+            <br />
             <p class="card-text"></p>
-            <a href="#" class="btn btn-primary">Iniciar</a>
+            <a type="button" class="btn btn-primary" asp-controller="Person" asp-action="Create">Criar Novo</a>
         </div>
     </div>
 
@@ -113,7 +106,7 @@
 
                                 <td>@item.Colunms</td>
                                 <td>@item.ColunmsInfo</td>
-                                
+
                                 <td scope="col">
                                     <a role="button" class="btn btn-primary" asp-route-id="@item.Id" asp-controller="Forms" asp-action="GetForUpdate">Editar</a>
                                     <a role="button" class="btn btn-danger" asp-route-id="@item.Id" asp-controller="Forms" asp-action="ConfirmDelete">Apagar</a>
